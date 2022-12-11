@@ -1,7 +1,7 @@
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     connectedServiceName: 'MyServiceConnection'
-    location: 'westus3'
+    location: 'canadacentral'
     resourceGroupName: Example
     csmFile: deploy/main.bicep
     overrideParameters: >
