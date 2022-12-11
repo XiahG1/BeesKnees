@@ -1,8 +1,10 @@
-stages:
+trigger: none
 
-- stage: Lint
-  jobs: 
-  - job: Lint
-    steps:
-      - script: |
-          az bicep build --file deploy/main.bicep
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+- job:
+  steps:
+  - script: echo Hello world!
+    displayName: 'Placeholder step'
