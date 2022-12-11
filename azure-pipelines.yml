@@ -5,4 +5,4 @@ stages:
   - job: Lint
     steps:
       - script: |
-          az bicep build --file C:\Users\851735\Desktop\main.bicep
+          az bicep build --file deploy/main.bicep
